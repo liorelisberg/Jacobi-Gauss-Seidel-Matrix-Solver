@@ -27,7 +27,7 @@
 3. **_k_**, the number of iterations used. If _k=max_iter_,
           then the required tolerance was not met.
 #
-**included file :**
+**included files :**
 - **main.py** - contains basic usage demonstration of jacobi_calc() or gauss_seidel_calc(), using a 3x3 matrix, and basic arguments.
 - **main2.py** - constains larger user-input of size _N_, matrix _a_ and vector _b_
 - **myMatrixTools.py** - constains few basic matrix manipulation and analysis functions for usage.
