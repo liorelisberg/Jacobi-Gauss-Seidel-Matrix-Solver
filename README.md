@@ -7,7 +7,7 @@
 ##### The algorithms will terminate when the change in x is less than ``tolerance``, or
 ##### if ``max_iter`` [default=200] iterations have been exceeded.
 #
-**_For each function:_**
+**_For each function:  (jacobi_calc() or gauss_seidel_calc())_**
 #
   **Receives 5 parameters:**
 1.  **_a_**, the NxN matrix that the method is being performed on.
