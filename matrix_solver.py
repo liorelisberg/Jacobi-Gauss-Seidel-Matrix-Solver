@@ -44,7 +44,9 @@ def jacobi_calc(a, b, x=None, tolerance=.001, max_iter=200):
         return None
 
     if x is None:
-        x = [0 for i in range(0, len(a))]
+        x = []
+        for i in range(0, len(a)):
+            x.append(0)
 
     rel_diff = 0
     x_prev = x
@@ -83,7 +85,7 @@ def jacobi_calc(a, b, x=None, tolerance=.001, max_iter=200):
 
 
 """
-Performs Gauss-Siedel iterations to solve the line system of
+Performs Gauss-Seidel iterations to solve the line system of
 equations, Ax=b, starting from an initial guess, ``x0``.
 
 Terminates when the change in x is less than ``tol``, or
@@ -109,7 +111,7 @@ Returns 3 variables:
 """
 
 
-def gauss_siedel_calc(a, b, x=None, tolerance=1e-16, max_iter=200):
+def gauss_seidel_calc(a, b, x=None, tolerance=1e-16, max_iter=200):
     if a is None or b is None:
         return None
 
@@ -127,7 +129,9 @@ def gauss_siedel_calc(a, b, x=None, tolerance=1e-16, max_iter=200):
         return None
 
     if x is None:
-        x = [0 for i in range(0, len(a))]
+        x = []
+        for i in range(0, len(a)):
+            x.append(0)
 
     x_prev = x
     k = 0

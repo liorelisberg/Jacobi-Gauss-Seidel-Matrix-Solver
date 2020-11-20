@@ -1,7 +1,7 @@
-# Jacobi & Gauss-Siedel Algorithms Using Python
+# Jacobi & Gauss-Seidel Algorithms Using Python
 
 #### The following methods solve the line system of
-#### equations, Ax=b,using Jacobi OR Gauss-Siedel algorithms, 
+#### equations, Ax=b,using Jacobi OR Gauss-Seidel algorithms, 
 #### starting from an initial guess, ``x0``.
 #
 ##### The algorithms will terminate when the change in x is less than ``tolerance``, or
