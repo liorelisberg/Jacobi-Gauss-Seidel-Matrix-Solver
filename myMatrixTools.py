@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def diagonal(a):
     diag = []
     for i in range(len(a)):
@@ -62,15 +65,25 @@ def is_diagonally_dominant(mat):
     if mat is None:
         return False
 
-    for numb, i in enumerate(mat):
-        if abs(mat[numb][numb]) < abs(sum(i) - mat[numb][numb]):
-            return False
-    return True
+    d = np.diag(np.abs(mat))  # Find diagonal coefficients
+    s = np.sum(np.abs(mat), axis=1) - d  # Find row sum without diagonal
+    return np.all(d > s)
 
 
 def is_matrix_square(mat):
+    if mat is None:
+        return False
+
     rows = len(mat)
     for row in mat:
         if len(row) != rows:
             return False
     return True
+
+
+def print_matrix(mat):
+    if is_matrix_square(mat):
+        for i in range(0, len(mat)):
+            for j in range(0, len(mat)):
+                print(mat[i][j], end="\t")
+            print('\n')

@@ -1,14 +1,16 @@
 from matrix_solver import jacobi_calc, gauss_seidel_calc
-from myMatrixTools import *
 
 
 def main():
     tol = 0.001
-    a = b = []
 
     n = int(input("enter matrix squared size (positive integer) : "))
+    print(n)
 
-    x = [0 for n in range(n)]
+    x = []
+    for i in range(0, n):
+        x.append(0)
+
     a = ([3, -1, 1],
          [0, 1, -1],
          [1, 1, -2])

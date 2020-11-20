@@ -113,17 +113,17 @@ Returns 3 variables:
 
 def gauss_seidel_calc(a, b, x=None, tolerance=1e-16, max_iter=200):
     if a is None or b is None:
-        return None
+        return None, None, None
 
     if not is_matrix_square(a):
         print('Matrix IS NOT squared (NxN) - cannot preform jacobi algorithm\n')
-        return None
+        return None, None, None
 
     if is_diagonally_dominant(a):
         print('Matrix IS diagonally dominant - preforming jacobi algorithm\n')
     else:
         print('Matrix IS NOT diagonally dominant - cannot preform jacobi algorithm\n')
-        return None
+        return None, None, None
 
     if a is None or b is None:
         return None
