@@ -31,3 +31,9 @@
 - **main.py** - contains basic usage demonstration of jacobi_calc() or gauss_seidel_calc(), using a 3x3 matrix, and basic arguments.
 - **main2.py** - constains larger user-input of size _N_, matrix _a_ and vector _b_
 - **myMatrixTools.py** - constains few basic matrix manipulation and analysis functions for usage.
+#
+**requirments :**
+- python>3.0
+- Numpy version 1.19.3 (previous to 1.19.4 -> had some issues initializing it)
+- all input should be valid (n/N = ints, the rest can be floats) -> no validations were made
+- all functions, **myMatrixTools.py** functions infcluded, must recieve valid parameters! -> no validations were made
